@@ -15,16 +15,16 @@ from tensorflow.keras.preprocessing import image
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
-from gevent.pywsgi import WSGIServer
+
 
 # Define a flask app
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-MODEL_PATH ='model_resnet50.h5'
+
 
 # Load your trained model
-model = load_model(MODEL_PATH)
+model = load_model("model_resnet501.h5")
 
 
 
